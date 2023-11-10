@@ -16,3 +16,20 @@
 
 // Create a function named sumLargestNumbers that will receive an array of numbers and return the sum of the two largest numbers in that array.
 
+
+function sumLargestNumbers(arr) {
+  let first = 0
+  let second = first
+  for (let num of arr){
+    if(num > first){
+      second = first
+      first = num
+    }
+  }
+  return first + second
+  // console.log(first + second)
+}
+
+// sumLargestNumbers([1, 10]);
+// sumLargestNumbers([1, 2, 3]);
+// sumLargestNumbers([10, 4, 34, 6, 92, 2])
